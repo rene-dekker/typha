@@ -74,6 +74,7 @@ var _ = DescribeTable("Config parsing",
 	Entry("HealthPort", "HealthPort", "1234", int(1234)),
 
 	Entry("PrometheusMetricsEnabled", "PrometheusMetricsEnabled", "true", true),
+	Entry("PrometheusMetricsHost", "PrometheusMetricsHost", "myhostname", true),
 	Entry("PrometheusMetricsPort", "PrometheusMetricsPort", "1234", int(1234)),
 	Entry("PrometheusGoMetricsEnabled", "PrometheusGoMetricsEnabled", "false", false),
 	Entry("PrometheusProcessMetricsEnabled", "PrometheusProcessMetricsEnabled", "false", false),

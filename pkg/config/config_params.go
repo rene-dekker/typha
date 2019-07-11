@@ -107,6 +107,7 @@ type Config struct {
 	HealthPort    int    `config:"int(0,65535);9098"`
 
 	PrometheusMetricsEnabled        bool `config:"bool;false"`
+	PrometheusMetricsHost        	string `config:"string;0.0.0.0"`
 	PrometheusMetricsPort           int  `config:"int(0,65535);9093"`
 	PrometheusGoMetricsEnabled      bool `config:"bool;true"`
 	PrometheusProcessMetricsEnabled bool `config:"bool;true"`

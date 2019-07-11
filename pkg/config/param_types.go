@@ -28,7 +28,7 @@ import (
 
 	"time"
 
-	"github.com/kardianos/osext"
+	osext "github.com/kardianos/osext"
 	log "github.com/sirupsen/logrus"
 )
 

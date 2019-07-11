@@ -400,7 +400,7 @@ func (t *TyphaDaemon) Start(cxt context.Context) {
 
 	if t.ConfigParams.PrometheusMetricsEnabled {
 		log.Info("Prometheus metrics enabled.  Starting server.")
-		go servePrometheusMetrics(t.ConfigParams)
+		go ServePrometheusMetrics(t.ConfigParams)
 	}
 
 	if t.ConfigParams.HealthEnabled {
@@ -503,7 +503,7 @@ func dumpHeapMemoryProfile(configParams *config.Config) {
 }
 
 // TODO Typha: Share with Felix.
-func servePrometheusMetrics(configParams *config.Config) {
+func ServePrometheusMetrics(configParams *config.Config) {
 	for {
 		log.WithField("port", configParams.PrometheusMetricsPort).Info("Starting prometheus metrics endpoint")
 		if configParams.PrometheusGoMetricsEnabled && configParams.PrometheusProcessMetricsEnabled {
