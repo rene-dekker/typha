@@ -1,5 +1,5 @@
-hash: 947bb8d92e85766b4bd14e243c3eb7fcfd96e14c605d223cd6c6bbd9b220057a
-updated: 2019-07-05T09:21:48.958553551Z
+hash: 854a60111359e61542fc1793cad570f8592d46d90021ecca1ac39fa429ca1862
+updated: 2019-07-12T14:02:52.600087819-07:00
 imports:
 - name: cloud.google.com/go
   version: 3b1ae45394a234c385be014e9a488f2bb6eef821
@@ -33,7 +33,7 @@ imports:
   - pkg/types
   - version
 - name: github.com/coreos/go-semver
-  version: e214231b295a8ea9479f11b70b35d5acf3556d9b
+  version: 8ab6407b697782a06568d4b7f1db25550ec2e4c6
   subpackages:
   - semver
 - name: github.com/davecgh/go-spew
@@ -173,7 +173,8 @@ imports:
 - name: github.com/projectcalico/go-yaml-wrapper
   version: 598e54215bee41a19677faa4f0c32acd2a87eb56
 - name: github.com/projectcalico/libcalico-go
-  version: 714ce2bcad0cc2fc765ee63370904d7c2c473af4
+  version: 2d977a46b6c95f26fc4099f9647ce1b1b8f9ae46
+  repo: https://github.com/rene-dekker/libcalico-go
   subpackages:
   - lib/apiconfig
   - lib/apis/v1
@@ -226,11 +227,11 @@ imports:
   - prometheus/internal
   - prometheus/promhttp
 - name: github.com/prometheus/client_model
-  version: fd36f4220a901265f90734c3183c5f0c91daa0b8
+  version: 6f3806018612930941127f2a7c6c453ba2c527d2
   subpackages:
   - go
 - name: github.com/prometheus/common
-  version: c873fb1f9420b83ee703b4361c61183b4619f74d
+  version: e3fb1a1acd7605367a2b378bc2e2f893c05174b7
   subpackages:
   - expfmt
   - internal/bitbucket.org/ww/goautoneg
